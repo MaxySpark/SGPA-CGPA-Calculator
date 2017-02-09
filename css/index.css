@@ -23,7 +23,8 @@ nav {
 }
 
 #cgpa {
-    margin: 50px 50px 0 50px;
+    margin: 0 50px 0 50px;
+    padding-top: 100px;
 }
 
 .center {
