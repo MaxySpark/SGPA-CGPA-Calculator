@@ -5,3 +5,23 @@
 nav {
     font-weight: bold;
 }
+
+#big-wrapper {
+    width: 100%;
+    height:1000px;
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000 , #53346D); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000 , #53346D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.data {
+    height: 40px;
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#cgpa {
+    margin: 100px 50px 0 50px;
+}

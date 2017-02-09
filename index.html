@@ -7,20 +7,32 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
+    <div id="big-wrapper">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">SGPA-CGPA-CALCULATOR</a>
             </div>
             <div class="container">
-            <ul class="nav navbar-nav">
-                <li><a href="#sgpa">Calcualte SGPA</a></li>
-                <li><a href="#cgpa">Calcualte CGPA</a></li>
-            </ul>
-        </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#sgpa">Calculate SGPA</a></li>
+                    <li><a href="#cgpa">Calculate CGPA</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-
+    <div id="wrapper">
+            <div id="sgpa" class="row">
+                
+            </div>
+            <div id="cgpa" class="row">
+                <div class="col-md-2 data">Semester</div>
+                <div class="col-md-2 col-md-offset-1 data">SGPA</div>
+                <div class="col-md-2 col-md-offset-1 data">Total Credit</div>
+                <div class="col-md-2 col-md-offset-2 data">Calculated CGPA</div>                
+            </div>
+    </div>
+    </div>
     <script type="text/javascript" src="/lib/boot/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
 </body>
