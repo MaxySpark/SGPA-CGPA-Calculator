@@ -23,5 +23,16 @@ nav {
 }
 
 #cgpa {
-    margin: 100px 50px 0 50px;
+    margin: 50px 50px 0 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    color: wheat;
+    font-weight: bold;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
