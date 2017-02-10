@@ -2,6 +2,8 @@ console.log("Author : MaxySpark (Bhargab Hazarika)");
 console.log("Email : me@bhargab.me");
 console.log("Github : http://git.maxyspark.com");
 
+document.getElementById("big-wrapper").style.height = window.innerHeight+"px";
+
 var click_count = 0;
 function addInputRow() {
     var input_row = document.getElementsByClassName("input-row")[0];
