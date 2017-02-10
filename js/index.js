@@ -10,3 +10,20 @@ function addInputRow() {
         document.getElementById("insert-sem").disabled = true;
     }
 }
+
+function cgpaCalculate(){
+    var sgpa = document.getElementsByClassName("sgpa_in")[0].value;
+    if(sgpa=="") {
+        sgpa = 0;
+    }
+    var credit = document.getElementsByClassName("credit_in")[0].value;
+    if(credit=="") {
+        credit = 0;
+    }
+    var cgpa = ((sgpa * credit) / credit);
+    if(isNaN(cgpa)) cgpa = 0;
+
+    console.log("SGPA : "+ sgpa);
+    console.log("CREDIT : "+ credit);
+    console.log("CGPA : "+ cgpa);  
+}
