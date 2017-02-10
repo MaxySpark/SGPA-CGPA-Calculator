@@ -10,6 +10,7 @@ function addInputRow() {
     var p_node = document.getElementById("cgpa");
     p_node.insertBefore(cln,insert);
     click_count++;
+
     if(click_count >=7 ) {
         document.getElementById("insert-sem").disabled = true;
     }
@@ -22,7 +23,7 @@ function cgpaCalculate(){
     var sgpa_arr = document.getElementsByClassName("sgpa_in");
     var credit_arr = document.getElementsByClassName("credit_in");
     elem_count = 0;
-    
+
     while(elem_count < sgpa_arr.length) {
         var sgpa = sgpa_arr[elem_count].value;
         if(sgpa=="") {
@@ -50,5 +51,6 @@ function cgpaCalculate(){
     }
 
     var total_cgpa = (total_sgpa_credit / total_credit);
+    if(isNaN(total_cgpa)) total_cgpa = 0;
     document.getElementById("total_cgpa").innerHTML = total_cgpa;  
 }
