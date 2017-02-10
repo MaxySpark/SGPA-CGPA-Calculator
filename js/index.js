@@ -27,6 +27,8 @@ function cgpaCalculate(){
     var cgpa = ((sgpa * credit) / credit);
     if(isNaN(cgpa)) cgpa = 0;
 
+    document.getElementsByClassName("cgpa_out")[0].value = cgpa;
+
     console.log("SGPA : "+ sgpa);
     console.log("CREDIT : "+ credit);
     console.log("CGPA : "+ cgpa);  
