@@ -45,26 +45,26 @@
                         </div>
                         <div class="col-md-2 col-md-offset-1">
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="SGPA">
+                                <input type="number" class="form-control sgpa_in" placeholder="SGPA">
                             </div>
                         </div>
                         <div class="col-md-2 col-md-offset-1">
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Total Credit Point">
+                                <input type="number" class="form-control credit_in" placeholder="Total Credit Point">
                             </div>
                         </div>
                         <div class="col-md-2 col-md-offset-2">
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="0" disabled>
+                                <input type="number" class="form-control cgpa_out" placeholder="0" disabled>
                             </div>
                         </div>
                 </div>
-                <br>
+                <br id="in">
                 <hr>
                 <div class="center">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-lg btn-primary">ADD SEMESTER</button>
-                        <button type="button" class="btn btn-lg btn-success">CALCULATE</button>                    
+                        <button id="insert-sem" type="button" class="btn btn-lg btn-primary" onclick="addInputRow()">ADD SEMESTER</button>
+                        <button id="calculate" type="button" class="btn btn-lg btn-success">CALCULATE</button>                    
                     </div>
                 </div>
             </div>
