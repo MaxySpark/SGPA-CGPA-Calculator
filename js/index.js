@@ -39,9 +39,9 @@ function cgpaCalculate(){
         } else {
             credit = parseFloat(credit);
         }
-        var cgpa = ((sgpa * credit) / credit);
         total_credit += credit;
         total_sgpa_credit += (sgpa * credit);
+        var cgpa = (total_sgpa_credit / total_credit);
         if(isNaN(cgpa)) cgpa = 0;
 
         document.getElementsByClassName("cgpa_out")[elem_count].value = cgpa;
